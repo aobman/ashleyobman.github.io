@@ -10,4 +10,4 @@ index.html (landing page)
 	contact.html (contact page)
 	
 	
-LINK TO LIVE WEBPAGE ON GITHUB PAGES SERVICE: ashleyobman.github.io
+LINK TO LIVE WEBPAGE ON GITHUB PAGES SERVICE: https://aobman.github.io/ashleyobman.github.io
