@@ -1,0 +1,96 @@
+<!--
+Ashley Obman 
+CS382 Modern Web Technologies 
+2/9/2024
+
+Purpose:
+projects.html is the page the user is redirected to when they click "Projects" in the navigation menu.
+
+-->
+
+<!-- PROJECTS.HTML FILE (projects page)-->
+<!DOCTYPE html> 
+<html lang="en">
+<!-- Begin the head section to include metadata -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures everything appears normal on all screens -->
+    <title>Ashley Obman - Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body> 
+    <!-- Create classes for header and inner header. Inner header is where navigation elements will be placed. -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="myName_container">
+          <h1>Ashley Obman</h1>  
+          <!-- Dark/Light theme toggle button -->
+          <button id="themeToggle">Theme</button>
+        </div>
+        <!-- Unordered list for the navigation menu -->
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header for database project -->
+    <h2 class="projectHeader">Interactive Application to Manage a Database</h2>
+    <!-- Paragraph below the project header -->
+    <div class="projectParagraphContainer">
+        <p class="databaseParagraph">With Java and SQL programming languages, I have created a user-friendly, interactive 
+            application that allows one to manage a database. Given a table name, the user has the ability to retrive all data, 
+            insert new data, and delete data. If a column name is given in addition, the application will return the average
+            of that column. 
+        </p>
+    </div>
+    <!-- Paragraph below the project header -->
+    <div class="projectParagraphContainer">
+        <p class="databaseParagraph2">This application benefits the user by allowing them to recover, manipulate, and analyze 
+            data effectively while reducing complexity and boosting productivity. The use of dynamic querying saves time and effort
+            when navigating large datasets. The statistical analysis functionality provides valuable insights into the dataset's numerical values, 
+            enabling informed decision-making. 
+        </p>
+    </div>
+    <!-- Vertically centered video -->
+    <div class="videoContainer">
+        <video id="projectVideo" class="centeredVideo" muted controls>
+            <source src="DatabaseProject.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Paragraph below the video -->
+    <div class="videoCaptionContainer">
+        <p class="databaseParagraph3">Full demonstration of my interactive application. 
+        </p>
+    </div>
+    <!-- Simple copyright footer -->
+    <footer id="projectFooter">
+        <p>&copy; 2024 Ashley Obman. All rights reserved.</p>
+    </footer>
+    <!-- Provided JavaScript code for dark/light theme -->
+    <script>
+        document.getElementById("themeToggle").onclick = function(){
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+    <!-- Additional script for persisting the theme state using sessionStorage -->
+    <script>
+        var themeState = sessionStorage.getItem('themeState');
+        if (themeState === 'dark') {
+        document.body.classList.add('dark');
+        }
+        document.getElementById("themeToggle").onclick = function() {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains('dark')) {
+            sessionStorage.setItem('themeState', 'dark');
+        } else {
+            sessionStorage.setItem('themeState', 'light');
+        }
+        };
+    </script>
+</body>
+</html>

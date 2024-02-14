@@ -1,0 +1,1111 @@
+/*
+Ashley Obman 
+CS382 Modern Web Technologies 
+2/5/2024
+
+Purpose:
+This styles.css file defines the styling of all pages and the consistent header, footer, and navigation menu.
+*/
+
+
+
+/* Remove any default margin and padding that may be applied by browser to start with a blank canvas */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Global footer */
+footer {
+  position: fixed; /* Position the footer at the bottom */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #070707;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
+
+/* Dark/light theme */
+/* Light theme */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #3f3f3f;
+  color: #ffffff;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 100%; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  padding: 5px 10px; /* Adjust padding to make the button smaller */
+  font-size: 10px; /* Adjust font size */
+  background-color: #000000; /* Change background color */
+  color: white; /* Change text color */
+  border: none; /* Remove border */
+  border-radius: 80px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Add pointer cursor */
+  outline: none; /* Remove outline */
+}
+
+/* Add hover effect */
+#themeToggle:hover {
+  background-color: #000000; /* Darken background color on hover */
+}
+
+/*------------------------------------------------------------------------------*/
+/*BEGIN LANDING PAGE STYLING*/
+/* Main header bar */
+.header {
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+
+/* Inner header (contains my name, home, projects, hobbies, and contact) */
+.inner_header {
+    width: 380px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* My name styling in the inner header */
+.myName_container {
+    height: 100%;
+    display: table;
+    float: left;
+    padding-left: 0;
+    position: relative;
+}
+
+/* My name styling in the inner header h1 */
+.myName_container h1 {
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Arial';
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* Navigation menu */
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+/* Navigation menu button styling */
+.navigation li {
+    float: left;
+    padding: 20px 8px;
+    font-family: 'Arial';
+    font-size: 9px;
+}
+
+/* Navigation color styling of the words Home, Projects, Hobbies, Contact */
+.navigation a  {
+    color: black; 
+}
+
+/* Landing image styling (photo of me) */
+#myPhoto {
+    width: 100%;
+    height: auto;
+}
+
+/* Landing bio header styling (Hi, I'm Ashley!) */
+.landingBio h2{
+  font-size: 35px;
+  font-family: 'Arial';
+}
+
+/* Landing bio styling */ 
+.landingBio {
+    text-align: center; /* Center the content */
+    margin-top: 40px; /* Add space between main header and paragraph */
+}
+
+/* Landing bio paragraph styling */
+.landingBio p {
+    text-align: center; /* Center text horizontally */
+    width: 80%; /* Adjust width */
+    margin: 40px auto 0; /* Center horizontally */
+    font-size: 15px;
+    font-family: 'Arial';
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/*------------------------------------------------------------------------------*/
+/* BEGIN STYLING CONTACT PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Styling of contact page */
+.contactPage {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Styling of Get In Touch heading  */
+h1 {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+/* Styling of paragraph below Get In Touch header */
+.contactPage p {
+   font-size: 15px; 
+}
+
+.contactInfo {
+    margin-top: 50px;
+}
+
+/* Styling of the list items */
+.item {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+/* Styling of the circles behind the icons */
+.item i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(221, 179, 232);
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* BEGIN HOBBIES PAGE */
+/* Styling of the mini nav menu (bleach art or traveling hobbies)*/
+.hobbySelection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Styling for the two buttons */
+.hobbyMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the two buttons */
+.hobbyMenu li {
+    display: inline-block; /* Display the list items as inline-block */
+    margin: 0 10px; /* Add some margin between the buttons */
+}
+
+/* Styling for the two buttons */
+.hobbyMenu li a {
+    display: inline-block;
+    padding: 6px 12px; /* Adjust the padding to make the buttons smaller */
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 60px;
+    transition: background-color 0.3s;
+    font-size: 12px; /* Adjust the font size */
+}
+
+/* Styling for the two buttons */
+.hobbyMenu li a:hover {
+    background-color: #ddd;
+}
+
+/* Styling of the Bleach Art header */
+.bleachArtHeader {
+    text-align: center; /* Center the header horizontally */
+    margin-top: 20px; /* Add space between the buttons and the header */
+    font-size: 24px; /* Adjust the font size */
+}
+
+/* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+.paragraphAndArtSupplies {
+    position: relative; /* Set the container as relative */
+    width: 100%;
+    margin-top: 120px;
+}
+
+.introParagraph {
+    width: 45%;
+    text-align: left;
+    padding-left: 20px; /* Add padding to the left side */
+}
+
+/* Styling for the first image on bleach art page */
+#artSupplies {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: calc(50% - 20px); /* Adjust width to account for padding */
+    padding-right: 20px; /* Add padding to the right side */
+}
+
+.secondParagraph {
+    text-align: center; /* Center text */
+    margin-top: 110px;
+    padding-left: 20px; /* Add padding to the left side */
+    padding-right: 20px; /* Add padding to the right side */
+}
+
+/* Bleach art footer to allow scrolling */
+#bleachArtFooter {
+    position: static; /* Change the position to static for the Hobbies page */
+}
+
+/* Bleach art images (skull and skeleton fairy) */
+.bleachArtImages {
+    white-space: nowrap; /* Prevent images from wrapping */
+    margin-top: 70px; /* Add margin to separate the images from the paragraph */
+    text-align: center; /* Center images horizontally */
+}
+
+/* Styling for the 4 other images on bleach art page */
+.skeletonImages {
+    width: calc(50% - 10px);
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 3px; /* Add margin to separate the images */
+    padding: 15px; /* Add padding to both sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.thirdParagraph {
+    text-align: center; /* Center text */
+    margin-top: 50px;
+    padding-left: 20px; /* Add padding to the left side */
+    padding-right: 20px; /* Add padding to the right side */
+    margin-bottom: 50px;
+}
+
+/* Etsy link below third paragraph */
+.etsyLink {
+    text-align: center; /* Center the link paragraph horizontally */
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+.etsyLink a {
+    color: rgb(194, 119, 8); /* Change link color as needed */
+    text-decoration: underline; /* Add underline to the link */
+    font-size: 15px; /* Adjust font size as needed */
+}
+
+ /* Styling for the automatic playing videos at the bottom of bleach art page */
+.artVideos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; /* Adjust as needed */
+    padding: 20px; /* Add padding to both sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.video {
+    width: 48%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*------------------------------------------------------------------------------*/
+/* BEGIN STYLING FOR TRAVELING PAGE */
+.travelingHeader {
+    text-align: center; /* Center the header horizontally */
+    margin-top: 20px; /* Add space between the buttons and the header */
+    font-size: 24px; /* Adjust the font size */
+}
+
+/* Styling for the paragraph container */
+.travelingParagraphContainer {
+    display: flex;
+    align-items: center; /* Vertically center the paragraph */
+    justify-content: center; /* Horizontally center the paragraph */
+    margin-top: 70px; /* Add space between the header and the paragraph */
+}
+
+/* Styling for the traveling paragraph */
+.travelingParagraph {
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust font size as needed */
+    width: 60%; /* Adjust width */
+}
+
+.travelHobbyImages {
+    white-space: nowrap; /* Prevent images from wrapping */
+    margin-top: 70px; /* Add margin to separate the images from the paragraph */
+    text-align: center; /* Center images horizontally */
+}
+
+/* Styling for the four images */
+.travelingImages {
+    width: calc(50% - 10px);
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 3px; /* Add margin to separate the images */
+    padding: 15px; /* Add padding to both sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Styling for the second paragraph container */
+.secondTravelingParagraphContainer {
+    display: flex;
+    align-items: center; /* Vertically center the paragraph */
+    justify-content: center; /* Horizontally center the paragraph */
+    margin-top: 70px; /* Add space between the header and the paragraph */
+}
+
+/* Styling for the second traveling paragraph */
+.secondtravelingParagraph {
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust font size as needed */
+    width: 60%; /* Adjust width */
+}
+
+/* Styling for the third paragraph container */
+.thirdTravelingParagraphContainer {
+    display: flex;
+    align-items: center; /* Vertically center the paragraph */
+    justify-content: center; /* Horizontally center the paragraph */
+    margin-top: 70px; /* Add space between the header and the paragraph */
+}
+
+/* Styling for the third traveling paragraph */
+.thirdtravelingParagraph {
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust font size as needed */
+    width: 60%; /* Adjust width */
+}
+
+/* Enable scrolling on travel page */
+#travelFooter {
+    position: static; /* Change the position to static for the Hobbies page */
+}
+
+/* Styling for the Cozumel image */
+.cozumelImage {
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+    margin-top: 80px; /* Add space between the paragraph and the image */
+}
+
+/* Adjust the width of the image */
+.cozumelImage img {
+    width: auto; /* Reset width to auto */
+    max-width: 90%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+/*------------------------------------------------------------------------------*/
+/* BEGIN PROJECTS PAGE */
+.projectHeader {
+    text-align: center; /* Center the header horizontally */
+    margin-top: 50px; /* Add space between the buttons and the header */
+    font-size: 24px; /* Adjust the font size */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Styling for the project paragraph container */
+.projectParagraphContainer {
+    display: flex;
+    align-items: center; /* Vertically center the paragraph */
+    justify-content: center; /* Horizontally center the paragraph */
+    margin-top: 70px; /* Add space between the header and the paragraph */
+}
+
+/* Styling for the database paragraph */
+.databaseParagraph, .databaseParagraph2 {
+    text-align: center; /* Center the text */
+    font-size: 15px; /* Adjust font size as needed */
+    width: 65%; /* Adjust width */
+}
+
+/* Styling for the video container */
+.videoContainer {
+    display: flex;
+    align-items: center; /* Vertically center the video */
+    justify-content: center; /* Horizontally center the video */
+    margin-top: 80px; /* Add space between the paragraph and the video */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Styling for the video */
+.centeredVideo {
+    max-width: 100%; /* Ensure the video doesn't exceed the container width */
+    max-height: 100%; /* Ensure the video doesn't exceed the container height */
+}
+
+/* Paragraph under video */
+.databaseParagraph3 {
+    text-align: center; /* Center the text */
+    font-size: 13px; /* Adjust font size as needed */
+    width: 65%; /* Adjust width */
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Project footer to allow scrolling */
+#projectFooter {
+    position: static; /* Change the position to static for the projects page */
+}
+
+.videoCaptionContainer {
+    display: flex;
+    align-items: center; /* Vertically center the paragraph */
+    justify-content: center; /* Horizontally center the paragraph */
+    margin-top: 10px; /* Add space between the header and the paragraph */
+}
+
+/*------------------------------------------------------------------------------*/
+/* Media queries for various screen sizes to ensure website appears appropriately 
+dont forget landscape and portrait*/
+
+/* Below 307px (very small screens, ex: Galaxy Fold)*/
+@media only screen and (max-width: 307px) {
+
+    /* LANDING PAGE */
+    .myName_container h1{
+        font-size: 12px;
+    }
+
+    .navigation a li{
+        font-size: 7px;
+    }
+    
+    .header .inner_header {
+        width: 95%; 
+    } 
+
+    #myPhoto {
+        width: 50%;
+    }
+
+    .landingBio p {
+      font-size: 10px;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Styling of Get In Touch heading  */
+    .contactPage h1 {
+        font-size: 30px;
+    }
+
+    /* Styling of paragraph below Get In Touch header  */
+    .contactPage p {
+        font-size: 12px;
+        
+    }
+
+    /* Styling of the list items */
+    .contactInfo .item {
+        margin-bottom: 24px;
+        font-size: 8px;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 10px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 20px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 50px;
+    }
+
+    .introParagraph {
+        font-size: 10px;
+    }
+
+    .secondParagraph {
+        margin-top: 60px;
+        font-size: 10px;
+        padding-left: 40px; /* Add padding to the left side */
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    .thirdParagraph {
+        font-size: 10px;
+    }
+
+    .etsyLink a {
+      font-size: 10px; 
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 20px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 10px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 10px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 10px;
+    }
+
+    /* PROJECT PAGE */
+    .databaseParagraph, .databaseParagraph2 {
+      font-size: 10px; 
+    }
+
+    .databaseParagraph3 {
+      font-size: 10px; 
+    }
+}
+
+/* 308px - 600px */
+@media only screen and (min-width: 308px) and (max-width: 600px) {
+
+    /* LANDING PAGE */
+    .myName_container h1{
+        font-size: 12px;
+    } 
+
+    .navigation a li{
+        font-size: 7px;
+    }
+
+    .inner_header {
+        width: 90%; 
+    } 
+
+    #myPhoto {
+        width: 80%;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Styling of paragraph below Get In Touch header  */
+    .contactPage p {
+      font-size: 15px; 
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 12px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 25px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 110px;
+    }
+
+    .introParagraph {
+        font-size: 15px;
+    }
+
+    .secondParagraph {
+        margin-top: 100px;
+        font-size: 15px;
+        padding-left: 40px; /* Add padding to the left side */
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 25px; /* Adjust the font size */
+    }
+    
+    .travelingParagraph {
+        font-size: 15px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 15px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 15px;
+    }
+
+}
+
+/* 601px and upwards */
+@media only screen and (min-width: 601px) {
+
+    /* LANDING PAGE */
+    .inner_header {
+        width: 90%; 
+    } 
+
+    #myPhoto {
+        width: 60%;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 15px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 25px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 60px;
+    }
+
+    .introParagraph {
+        font-size: 15px;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 12px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 25px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 60px;
+    }
+
+    .introParagraph {
+        font-size: 15px;
+    }
+
+    .secondParagraph {
+        margin-top: 70px;
+        font-size: 15px;
+        padding-left: 40px; /* Add padding to the left side */
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 25px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 15px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 15px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 15px;
+    }
+}
+
+/* 768px and upwards */
+@media only screen and (min-width: 768px) {
+
+    /* LANDING PAGE */
+    .inner_header {
+        width: 90%; 
+    } 
+
+    #myPhoto {
+        width: 70%;
+    }
+
+    .contactPage p {
+        margin-left: 0;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 22px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 40px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 250px;
+    }
+
+    .introParagraph {
+        font-size: 27px;
+        padding-left: 40px; /* Add padding to the right side */
+    }
+
+    #artSupplies {
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    .secondParagraph {
+        margin-top: 180px;
+        font-size: 27px;
+        padding-left: 60px; /* Add padding to the left side */
+        padding-right: 60px; /* Add padding to the right side */
+    }
+
+    .thirdParagraph {
+        font-size: 27px;
+    }
+
+    .etsyLink p {
+        font-size: 27px; /* Adjust font size as needed */
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 40px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 27px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 27px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 27px;
+    }
+}
+
+/* 992px and upwards */
+@media only screen and (min-width: 992px) {
+
+    /* LANDING PAGE */
+    .inner_header {
+        width: 95%; 
+    } 
+
+    #myPhoto {
+        width: 70%;
+    }
+
+    .contactPage p {
+        margin-left: 0;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 22px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 45px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 270px;
+    }
+
+    .introParagraph {
+        font-size: 30px;
+        padding-left: 40px; /* Add padding to the right side */
+    }
+
+    #artSupplies {
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    .secondParagraph {
+        margin-top: 160px;
+        font-size: 30px;
+        padding-left: 40px; /* Add padding to the left side */
+        padding-right: 40px; /* Add padding to the right side */
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 45px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 30px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 30px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 30px;
+    }
+
+}
+
+/* 1024px and upwards */
+@media only screen and (min-width: 1024px) {
+
+    /* LANDING PAGE */
+    .inner_header {
+        width: 95%; 
+    } 
+
+    #myPhoto {
+        width: 25%;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 22px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 35px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 280px;
+    }
+
+    .introParagraph {
+        font-size: 15px;
+        padding-left: 45px; /* Add padding to the right side */
+    }
+
+    #artSupplies {
+        padding-right: 45px; /* Add padding to the right side */
+    }
+
+    .secondParagraph {
+        margin-top: 240px;
+        font-size: 15px;
+        padding-left: 100px; /* Add padding to the left side */
+        padding-right: 100px; /* Add padding to the right side */
+    }
+
+    .thirdParagraph {
+      font-size: 15px;
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 35px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 15px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 15px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 15px;
+    }
+
+}
+
+/* 1200px and upwards */
+@media only screen and (min-width: 1200px) {
+
+    /* LANDING PAGE */
+    .inner_header {
+        width: 95%; 
+    } 
+
+    #myPhoto {
+        width: 20%;
+    }
+
+    .contactPage {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* BLEACH ART PAGE */
+    .hobbyMenu li a {
+        font-size: 22px; /* Adjust the font size */
+    }
+
+    /* Styling of the Bleach Art header */
+    .bleachArtHeader {
+        font-size: 35px; /* Adjust the font size */
+    }
+
+    /* Styling of the first left aligned paragraph and right aligned image next to it (art supplies)*/
+    .paragraphAndArtSupplies {
+        margin-top: 300px;
+    }
+
+    .introParagraph {
+        font-size: 15px;
+        padding-left: 55px; /* Add padding to the right side */
+    }
+
+    #artSupplies {
+        padding-right: 55px; /* Add padding to the right side */
+        height: auto;
+        max-width: 25%;
+    }
+
+    .secondParagraph {
+        margin-top: 340px;
+        font-size: 15px;
+        padding-left: 100px; /* Add padding to the left side */
+        padding-right: 100px; /* Add padding to the right side */
+    }
+
+    /* TRAVELING PAGE */
+    .travelingHeader {
+        font-size: 35px; /* Adjust the font size */
+    }
+    
+    /* Styling for the paragraph container */
+    .travelingParagraphContainer {
+        margin-top: 50px;
+    }
+    
+    .travelingParagraph {
+        font-size: 15px; 
+    }
+    
+    /* Styling for the second traveling paragraph */
+    .secondtravelingParagraph {
+        font-size: 15px;
+    }
+    
+    /* Styling for the third traveling paragraph */
+    .thirdtravelingParagraph {
+        font-size: 15px;
+    }
+
+}
+
+ /* For the contact page */
+@media only screen and (max-width: 980px) {
+
+    .contactPage {
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .contactInfo {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+
+    .item {
+        font-size: 13px;
+    }
+
+    .item i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+
+
+

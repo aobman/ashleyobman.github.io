@@ -1,0 +1,96 @@
+<!--
+Ashley Obman 
+CS382 Modern Web Technologies 
+2/9/2024
+
+Purpose:
+contact.html is the page the user is redirected to when they click "Contact" in the navigation menu.
+
+-->
+
+<!-- CONTACT.HTML FILE (contact page)-->
+<!DOCTYPE html> 
+<html lang="en">
+<!-- Begin the head section to include metadata -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures everything appears normal on all screens -->
+    <title>Ashley Obman - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- For icons -->
+</head>
+<body> 
+    <!-- Create classes for header and inner header. Inner header is where navigation elements will be placed. -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="myName_container">
+          <h1>Ashley Obman</h1>  
+          <!-- Dark/Light theme toggle button -->
+          <button id="themeToggle">Theme</button>
+        </div>
+        <!-- Unordered list for the navigation menu -->
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Contact page -->
+    <div class="contactPage">
+        <h1>Get In Touch</h1> 
+            <p>If you'd like to contact me, please refer to the information below. I can be reached 
+                quickest through email.
+            </p>
+        <!-- Contact information icons with info -->
+        <div class="contactInfo">
+            <div class="item">
+                <!-- Home -->
+                <i class="material-icons">home</i>
+                Las Cruces, New Mexico
+            </div>
+            <div class="item">
+                <!-- Email -->
+                <i class="material-icons">mail</i>
+                ash*****@gmail.com
+            </div>
+            <div class="item">
+                <!-- Phone -->
+                <i class="material-icons">phone</i>
+                (575) ***-****
+            </div>
+            <div class="item">
+                <!-- Timezone -->
+                <i class="material-icons">watch</i>
+                Mon - Fri 8:00AM to 5:00PM MST
+            </div>
+        </div>
+    </div>
+    <!-- Simple copyright footer -->
+    <footer>
+        <p>&copy; 2024 Ashley Obman. All rights reserved.</p>
+    </footer>
+    <!-- Provided JavaScript code for dark/light theme -->
+    <script>
+        document.getElementById("themeToggle").onclick = function(){
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+    <!-- Additional script for persisting the theme state using sessionStorage -->
+    <script>
+        var themeState = sessionStorage.getItem('themeState');
+        if (themeState === 'dark') {
+        document.body.classList.add('dark');
+        }
+        document.getElementById("themeToggle").onclick = function() {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains('dark')) {
+            sessionStorage.setItem('themeState', 'dark');
+        } else {
+            sessionStorage.setItem('themeState', 'light');
+        }
+        };
+    </script>
+</body>
+</html>
