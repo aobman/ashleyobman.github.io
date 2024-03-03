@@ -423,6 +423,42 @@ h1 {
 
 /*------------------------------------------------------------------------------*/
 /* BEGIN PROJECTS PAGE */
+/* Styling of the mini nav menu (database application or connect 4 game)*/
+.projectSelection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Styling for the two buttons */
+.projectMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the two buttons */
+.projectMenu li {
+    display: inline-block; /* Display the list items as inline-block */
+    margin: 0 10px; /* Add some margin between the buttons */
+}
+
+/* Styling for the two buttons */
+.projectMenu li a {
+    display: inline-block;
+    padding: 6px 12px; /* Adjust the padding to make the buttons smaller */
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 60px;
+    transition: background-color 0.3s;
+    font-size: 12px; /* Adjust the font size */
+}
+
+/* Styling for the two buttons */
+.projectMenu li a:hover {
+    background-color: #ddd;
+}
+
 .projectHeader {
     text-align: center; /* Center the header horizontally */
     margin-top: 50px; /* Add space between the buttons and the header */
