@@ -1,0 +1,134 @@
+/*
+Ashley Obman 
+CS382 Modern Web Technologies 
+2/29/2024
+
+Purpose:
+This connect4style.css sheet implements the styles for my Connect 4 game.
+*/
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header container styles */
+#header-container {
+    text-align: center; /* Center-align the content */
+    position: absolute; /* Position the container absolutely */
+    top: 0; /* Position the container at the top of the page */
+    left: 0; /* Position the container at the left of the page */
+    width: 100%; /* Ensure the container spans the entire width */
+}
+
+/* Header styles */
+header {
+    padding: 20px 0; /* Add padding for spacing */
+    font-size: 25px;
+}
+
+/* Player turn text styles */
+#player-turn {
+    margin-top: 10px; 
+}
+
+/* Reset button style */
+#reset-button {
+    background-color: rgb(0, 0, 0); /* Set background color to black */
+    color: white; /* Set text color to white */
+    border: none; /* Remove border */
+    border-radius: 15px; /* Add rounded corners */
+    padding: 7px 9px; /* Add padding */
+    margin-top: 10px; /* Add margin to the top */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Change button color on hover */
+#reset-button:hover {
+    background-color: rgba(61, 61, 61, 0.7); /* More transparent black color */
+}
+
+/* Winner text styles */
+#game-status{
+    margin-top: 10px; /* Add margin to the top of the winner text */
+    text-align: center; /* Center-align the text */
+}
+
+/* Game board styles */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 40px); /* Adjust width of grid columns */
+    grid-template-rows: repeat(6, 40px); /* Adjust height of grid rows */
+    gap: 3px; /* Adjust gap between grid cells */
+}
+
+/* Cell styles */
+.cell {
+    background-color: #4368e4; /* Default cell color */
+    border-radius: 70%;
+    width: 40px; /* Adjust width of grid cells */
+    height: 40px; /* Adjust height of grid cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Disc styles */
+.disc {
+    width: 32px;
+    height: 32px;
+    border-radius: 70%;
+    margin: auto;
+    transform: translateY(-250px); /* Initial position (on the board) */
+    animation: dropAnimation 1.5s forwards; /* Apply animation */
+}
+
+/* Drop animation for the discs */
+@keyframes dropAnimation {
+    0% {
+        transform: translateY(-250px); /* Start position (above the board) */
+    }
+    100% {
+        transform: translateY(0); /* End position (on the board) */
+    }
+}
+
+/* Player 1 disc color */
+.player1-disc {
+    background-color: red;
+}
+
+/* Player 2 disc color */
+.player2-disc {
+    background-color: yellow;
+}
+
+/* Player turn text */
+#player-turn {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Game status text */
+#game-status {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
